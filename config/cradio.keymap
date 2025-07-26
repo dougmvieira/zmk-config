@@ -10,9 +10,9 @@
 #define HRM_S    &st LCTRL S
 #define HRM_D    &qt LSHFT D
 #define HRM_F    &st LGUI  F
-#define HRM_J    &st LGUI  A
-#define HRM_K    &mt LSHFT S
-#define HRM_L    &st LCTRL D
+#define HRM_J    &st LGUI  J
+#define HRM_K    &mt LSHFT K
+#define HRM_L    &st LCTRL L
 #define HRM_SEMI &st LALT  SEMI
 
 // Key aliases
