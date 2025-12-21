@@ -108,9 +108,9 @@
   &bootloader  &none      &none      &none     &bt BT_SEL 1    &none      &none      &none      &none     &bootloader
 //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //│          │          │          │ CLEAR BT │PROFILE 2 │   │          │          │          │          │          │
-&studio_unlock &none      &none     &bt BT_CLR &bt BT_SEL 2    &none      &none      &none      &none      &none 
+&studio_unlock &none      &none     &bt BT_CLR &bt BT_SEL 2    &none      &none      &none      &none      &none
 //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                     &none      &none          &none      &none 
+                                     &none      &none          &none      &none
 //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
