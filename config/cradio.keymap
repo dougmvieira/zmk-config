@@ -10,10 +10,10 @@
 #define HRM_S    &st LCTRL S
 #define HRM_D    &qt LSHFT D
 #define HRM_F    &st LGUI  F
-#define HRM_J    &st LGUI  J
-#define HRM_K    &mt LSHFT K
-#define HRM_L    &st LCTRL L
-#define HRM_SEMI &st LALT  SEMI
+#define HRM_J    &st RGUI  J
+#define HRM_K    &qt RSHFT K
+#define HRM_L    &st RCTRL L
+#define HRM_SEMI &st RALT  SEMI
 
 // Key aliases
 #define VOLUP C_VOL_UP
@@ -92,7 +92,7 @@
         brackets {
             bindings = <
                &kp LBKT  &kp RBKT  &kp LBRC  &kp RBRC  &none     &none     &none     &none     &none     &none
-               &kp DQT   &kp  SQT  &kp LPAR  &kp RPAR  &none     &none     &kp LGUI  &kp LSHFT &kp LCTL  &kp LALT
+               &kp DQT   &kp  SQT  &kp LPAR  &kp RPAR  &none     &none     &kp RGUI  &kp RSHFT &kp RCTRL &kp RALT
                &kp GRAVE &none     &kp BSLH  &none     &none     &none     &mo 2     &none     &none     &none
                                              &none     &none     &none     &none
             >;
@@ -108,7 +108,7 @@
   &bootloader  &none      &none      &none     &bt BT_SEL 1    &none      &none      &none      &none     &bootloader
 //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 //│          │          │          │ CLEAR BT │PROFILE 2 │   │          │          │          │          │          │
-&studio_unlock &none      &none     &bt BT_CLR &bt BT_SEL 2    &none      &none      &none      &none      &none
+&out OUT_TOG   &none      &none     &bt BT_CLR &bt BT_SEL 2    &none      &none      &none      &none      &none
 //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                      &none      &none          &none      &none
 //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
