@@ -20,15 +20,7 @@
 include:
   - board: nice_nano
     shield: cradio_left
-    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
   - board: nice_nano
     shield: cradio_right
-    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
-  - board: xiao_ble
-    shield: cradio_dongle
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: nice_nano
-    shield: settings_reset
-  - board: xiao_ble
     shield: settings_reset
