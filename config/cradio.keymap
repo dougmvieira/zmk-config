@@ -75,7 +75,7 @@
 
         arrows {
             bindings = <
-               &none     &none     &none     &none     &bt BT_SEL 0     &kp HOME  &kp PG_DN &kp PG_UP &kp END   &none
+             &bootloader &none     &none     &none     &bt BT_SEL 0     &kp HOME  &kp PG_DN &kp PG_UP &kp END   &none
                &kp LALT  &kp LCTRL &kp LSHFT &kp LGUI  &bt BT_SEL 1     &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &none
                &none     &none     &none     &mo 3     &bt BT_SEL 2     &kp MUTE  &kp VOLDN &kp VOLUP &kp C_PP  &none
                                           &out OUT_TOG &bt BT_CLR       &kp ENTER &none
@@ -84,7 +84,7 @@
 
         brackets {
             bindings = <
-               &kp LBKT  &kp RBKT  &kp LBRC  &kp RBRC  &none     &none     &none     &none     &none     &none
+               &kp LBKT  &kp RBKT  &kp LBRC  &kp RBRC  &none     &none     &none     &none     &none     &bootloader
                &kp DQT   &kp  SQT  &kp LPAR  &kp RPAR  &none     &none     &kp RGUI  &kp RSHFT &kp RCTRL &kp RALT
                &kp GRAVE &none     &kp BSLH  &none     &none     &none     &mo 2     &none     &none     &none
                                              &none     &none     &none     &none
