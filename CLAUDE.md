@@ -21,13 +21,13 @@ The Cradio shield itself lives upstream in ZMK (`app/boards/shields/cradio/`); n
 
 Defined in `build.yaml`:
 
-| Board | Shield | Purpose |
-|-------|--------|---------|
-| `nice_nano` | `cradio_left` | Left split half (BLE central, talks to host) |
-| `nice_nano` | `cradio_right` | Right split half (BLE peripheral, talks to left) |
-| `nice_nano` | `settings_reset` | Factory reset firmware (clears BT pairings) |
+| Board            | Shield           | Purpose                                       |
+|------------------|------------------|-----------------------------------------------|
+| `nice_nano//zmk` | `cradio_left`    | Left split half (BLE central, talks to host)  |
+| `nice_nano//zmk` | `cradio_right`   | Right split half (BLE peripheral, talks to left) |
+| `nice_nano//zmk` | `settings_reset` | Factory reset firmware (clears BT pairings)   |
 
-The `nice_nano` board name is correct under Zephyr HWMv2 — it defaults to revision 2.0.0 (nice!nano v2). For v1 hardware use `nice_nano@1.0.0`. The old `nice_nano_v2` board name is deprecated.
+The `//zmk` suffix selects the ZMK board variant introduced in Zephyr 4.1 / ZMK 2025-12-09 (see https://zmk.dev/blog/2025/12/09/zephyr-4-1#zmk-board-variant). Without it the board lacks the ZMK compat layer and the build fails. The default revision is 2.0.0 (nice!nano v2); for v1 hardware use `nice_nano@1.0.0//zmk`. The older `nice_nano_v2` and bare `nice_nano` names are no longer accepted.
 
 After flashing new firmware, both halves must be factory-reset once (via `settings_reset.uf2`) before they will re-pair to each other.
 
