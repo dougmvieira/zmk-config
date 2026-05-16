@@ -33,13 +33,14 @@ After flashing new firmware, both halves must be factory-reset once (via `settin
 
 ## Keymap Architecture
 
-`config/cradio.keymap` defines 5 layers:
+`config/cradio.keymap` defines 4 layers:
 
 1. **Default** — QWERTY with home-row mods. Left hand uses L-side modifiers (Alt/Ctrl/Shift/Gui on A/S/D/F); right hand uses R-side modifiers (Gui/Shift/Ctrl/Alt on J/K/L/;). The L/R split avoids same-hand mod-tap conflicts and OS shortcuts that distinguish L vs R modifiers.
 2. **Layer 1** — Numpad
-3. **Layer 2** — Arrows, Home/End, PgUp/PgDn, volume
+3. **Layer 2** — Arrows, Home/End, PgUp/PgDn, volume; plus BT controls on the inner column / left thumb (`BT_SEL 0/1/2`, `BT_CLR`, `&out OUT_TOG` for USB/BT switch)
 4. **Layer 3** — Brackets, braces, parens, quotes
-5. **Layer 4** (Flashing) — Reset, bootloader, BT profile selection, USB/BT output toggle (`&out OUT_TOG`); activated only when layers 2+3 are both held
+
+There is no software binding for `&sys_reset` or `&bootloader`. To re-flash firmware, double-tap the physical reset button on the nice!nano.
 
 Custom hold-tap behaviors:
 - `qt` (quick_mod_tap) — 200 ms tap term, used on shift positions (D, K) where a faster tap is preferred
